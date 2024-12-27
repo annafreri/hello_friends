@@ -1,0 +1,41 @@
+[
+  {
+    "name": "ntina",
+    "timezone": "Europe/Copenhagen",
+    "city": "Copenhagen, DK"
+  },
+  {
+    "name": "anna",
+    "timezone": "Europe/Amsterdam",
+    "city": "Eindhoven, NL"
+  },  {
+    "name": "vana",
+    "timezone": "Europe/London",
+    "city": "Glasgow, UK"
+  },
+  {
+    "name": "twiggy",
+    "timezone": "Europe/Athens",
+    "city": "Athens, GR"
+  },
+  {
+    "name": "hro",
+    "timezone": "Europe/Athens",
+    "city": "Athens, GR"
+  },
+  {
+    "name": "tasos",
+    "timezone": "Europe/Athens",
+    "city": "Athens, GR"
+  },
+  {
+    "name": "anna_legacy",
+    "timezone": "Europe/Zurich",
+    "city": "Mendrisio, CH"
+  },
+  {
+    "name": "anthi",
+    "timezone": "Europe/Athens",
+    "city": "Syros, GR"
+  }
+]
