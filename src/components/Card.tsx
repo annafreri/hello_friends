@@ -32,6 +32,11 @@ export default function Card(props: Props) {
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
         );
         const data = await response.json();
+        console.log(`Weather data for ${city}:`, data);
+        if (!data.weather || !Array.isArray(data.weather) || data.weather.length === 0) {
+          console.error(`Invalid weather data structure for ${city}:`, data);
+          return;
+        }
         setWeatherData(data);
       } catch (error) {
         console.error(`Error fetching weather data for ${city}:`, error);
@@ -41,7 +46,7 @@ export default function Card(props: Props) {
     fetchWeatherData();
   }, [city]);
 
-  const mainWeatherCondition = weatherData?.weather[0]?.main || '';
+  const mainWeatherCondition = weatherData?.weather?.[0]?.main || 'Clear';
   const temp = weatherData?.main?.temp || '';
 
   return (
